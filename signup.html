@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Signup Form</title>
+</head>
+
+<body id="form1">
+    <div class="container5">
+        <div class="formd">
+            <form action="" id="Form">
+                <h2>Register Form</h2>
+                <div class="F">
+                    <label style="color: #fff;" for="Username" class="name">Full Name</label>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" id="Username" class="Tname" value="" name="Username" autocomplete="off" placeholder="Username" />
+                    <small class="error"></small>
+                </div>
+                <div class="F">
+                    <label style="color: #fff;" for="Email">Mail id</label>
+                    <ion-icon  name="mail-outline"></ion-icon>
+                    <input type="email" id="Email"  class="mail" name="mailid" value="" autocomplete="email" placeholder="Enter mail" required />
+                    <small class="error"></small>
+                </div>
+                <div class="F">
+                   <label style="color: #fff;" for="Date">date of birth</label>
+                   <input type="date"   id="Date"  class="date"  name="dateTI" value="2023-12-12" />
+                   <small class="error"></small>
+                </div>
+                <div class="F">
+                    <label style="color: #fff;" for="Password">password</label>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <input type="password"  id="Password"  class="pass" name="password" minlength="8" maxlength="12" placeholder="password" autocomplete="off"/>
+                    <small class="error"></small>
+                </div>
+                <div class="F">
+                    <label style="color: #fff;" for="COpassword">confirm password</label>
+                    <ion-icon name="eye-outline"></ion-icon>
+                    <input type="password"  id="COpassword" name="confirm_password" placeholder="con password" class="confirm_password" />
+                    <small class="error"></small>
+                </div>
+                <div>
+                    <button type="submit" id="signup" class="button">Register</button>
+                </div>
+                <div class="F1">
+                    <span><a style="margin-left: -70px;" href="login.html">Already have account?</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="log.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+
+  
+</body>    
+        
+</html>

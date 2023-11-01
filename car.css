@@ -1,0 +1,484 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+ html,body
+{
+    width: 100%;
+    min-height: 200vh;
+    background: black;
+    background-size:cover;
+    background-position: center;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+header
+{
+    position: relative;
+    width: 1510px;
+    min-height: 13vh;
+    background:#000;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: 2px solid rgba(117, 181, 230, 0.2);
+    
+}
+
+header:hover{
+    cursor: pointer;
+    background: rgba(225, 255, 255 ,0.1);;
+}
+
+header .logo{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 70px;
+
+}
+.logo-P{
+    margin-left: 70px;
+    margin-right:300px ;
+}
+
+
+header ul
+{
+    position: relative;
+    margin-left: 230px;
+    
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li a 
+{
+    position: relative;
+    color:#eee;
+    font-size: 1em;
+    text-decoration: none;
+    
+}
+
+li a{
+    position: absolute;
+    margin-left: 110%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log{
+    background: #a25a65;
+    padding: 0.5em 1em;
+    top: 22px;
+    border-radius: 5px;
+    left: -400px;
+    right: 150px;
+    transition:all 0.3s ease 0s;
+}
+
+.log:hover{
+    transform:translateY(-2px);
+}
+
+.sig{
+    background: #a25a65;
+    padding: 0.5em 1em;
+    top: -15px;
+    left: -230px;
+    border-radius: 5px;
+    right:10px ;
+    transition:  all 0.3s ease 0s;
+   
+}
+.sig:hover{
+    transform:translateY(-2px);
+}
+
+li a:hover
+{
+    color:rgb(211, 23, 23);
+    cursor: pointer;
+}
+
+
+.toggle_btn{
+    position: absolute;
+    right:40px;
+    visibility: hidden;
+    
+}
+ #car-section{
+    position: absolute;
+    width: 630px;
+    height: 430px;
+    top: 12.6%;
+    padding: 10px;
+    border-radius: 13px;
+    margin-top: 35px;
+    background:#cdd9dec4;
+    margin-left: 150px;
+    box-shadow: 1px 2px 2px  2px rgba(190, 81, 73, 0.8);
+
+}
+
+.img-car1{
+    position:absolute;
+    object-fit: cover;
+    height: 420px;
+    padding: 11rem;
+    top: 3px;
+    left: 5px;
+    bottom: 20px;
+    right: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,.8);
+
+}
+.specific{
+    position: relative;
+    color: #fff;
+    left: 750px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------Scroll css------------------------------------------------------------*/
+
+.scroll-page{
+    position: relative;
+    background:#000;
+   /* border-top: 2px solid rgba(117, 181, 230, 0.2);*/
+    max-width: 100%;
+    min-height:80vh;
+    scroll-timeline:initial ;
+    top: 520px;
+}
+.scroll-page{
+    opacity: 0;
+   filter: blur(5px);
+}
+.scroll-page{
+    opacity: 1;
+    filter: blur(0);
+}
+
+.img-section img{
+    position:relative;
+    width: 500px;
+    top: 160px;
+    left: 150px;
+    border-radius: 10px; 
+}
+
+
+.img-section{
+    position: absolute;
+    width: 100%;
+    min-height: 80vh;
+}
+.img-section span{
+    position: absolute;
+    top: 410px;
+    left: 140px;
+    right: 0;
+
+}
+
+.detail{
+    position: absolute;
+    font-family: 'poppine' sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    text-overflow: hidden;
+    bottom: 150px;
+    left: 790px;
+}   
+.detail h1{
+    position:relative;
+    font-weight: 600;
+    font-size: 50px;
+    top: -30px;
+    right: 60px;
+    text-align: center;
+
+}
+
+.detail h2{
+    position:relative;
+    font-weight: 400;
+    font-size: 30px;
+    top: -10px;
+    right: 60px;
+    text-align: center;
+}
+
+
+
+.detail1{
+    position: absolute;
+    font-family: 'poppine' sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    top: 150px;
+    right: 0;
+    
+
+}
+.detail1 h1{
+    position:relative;
+    font-weight: 600;
+    font-size: 40px;
+    top: -60px;
+    right: 40px;
+    text-align: center;
+
+}
+.detail1 h2{
+    position:relative;
+    font-weight: 400;
+    font-size: 20px;
+    top: -50px;
+    right: 60px;
+    text-align: center;
+}
+.detail1 p{
+    position: relative;
+    font-weight: 400;
+    padding: 5px;
+    top: -40px;
+    right: 60px;
+    font-size: 15px;
+    text-align: center;
+
+}
+.para1{
+    position: absolute;
+    inset: 60px;
+    margin-left: -55px;
+}
+
+
+/*  animation style */
+.img,p{
+    opacity: 0;
+}
+.img.img1,p.animate__animated{
+    opacity: 1;
+}
+
+ #he,
+ #he2{
+    opacity: 0;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------Product card css----------------------------------------------------------*/
+
+.card{
+    position: relative;
+    background: #fff;
+    width: 300px;
+    height: 520px;
+    top: 700px;
+    left: 130px;
+    border: 1px solid rgba(216, 8, 8, 0.771);
+    border-radius: 10px;
+
+}
+.imgbox img{
+    width:18rem;
+    left: -11px;
+    height: 240px;
+    top:0;
+    margin:5px;
+    margin-top: 2px;
+    padding: 0.1rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7);
+    transition: all 0.2s ease-in ;
+}
+.imgbox img:hover{
+    transform: translateX(7px);
+
+
+}
+.sub{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_detail{
+    position: absolute; 
+    margin-top: 5px;
+}
+
+.card_btn{
+    position:absolute;
+    border: none;
+    background-color: transparent;
+    margin:  0 auto;
+    margin-top: 40px;
+    padding:.5rem 1rem;
+    border-radius:1.05rem;
+    background-color: #71b0cb6c;
+    color: #0e398f;
+    cursor: pointer;
+   transition: all .3s ease;
+
+}
+
+.card_detail{
+    padding: 0.5rem;
+
+}
+small{
+    position: absolute;
+    font-size: 20px;
+    color: #1d0a98;
+    top: 170px;
+    text-align: center;
+}
+small::after{
+    color: red;
+    content: ': $ 696,777';
+}
+
+
+.card1{
+    position:relative;
+    background: #fff;
+    width: 300px;
+    height: 520px;
+    top: 180px;
+    left: 560px;
+    border: 1px solid rgba(216, 8, 8, 0.771);
+    border-radius: 10px;
+
+}
+.card2{
+    position: relative;
+    background: #fff;
+    width: 300px;
+    height: 520px;
+    bottom: 340px;
+    left: 980px;
+    border: 1px solid rgba(216, 8, 8, 0.771);
+    border-radius: 10px;
+
+}
+
+
+/*--------------------animation card -------------------------*/
+#card2{
+    animation-delay: 0.53s;
+    animation-direction:linear;
+    filter: blur(30px);
+    opacity: 0;
+}
+#card2.animate__animated{
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+#card3{
+    animation-delay: 0.70s;
+    animation-direction: linear;
+    opacity: 0;
+    filter: blur(30px);
+}
+#card3.animate__animated{
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

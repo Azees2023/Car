@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif  !important
+}
+
+body
+{
+    width: 100%;
+    max-width: 1520px;
+    scroll-behavior: smooth;
+    min-height: 120vh;
+    background: #020405;
+    background-image:url(pxfuel.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+header
+{
+    position: relative !important;
+    width: 100% !important;
+    height: 76px;
+    z-index: 3;
+    background: rgba(225, 255, 255 ,0.1);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header .logo{
+    min-width: auto;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+
+ .action_btn{
+    background-color: rgb(25, 114, 247);
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    margin-right: 140px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    transition: scale 0.2 ease;
+
+ }
+ .action_btn:hover{
+    scale: 1.05;
+    transition: 0.7ms !important;
+
+ }
+ .action_btn:focus{
+    outline-color: transparent;
+    background-color:darkblue;
+    scale: 0.95;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px blue;
+ }
+
+header .toggle_btn{
+    color:#fff;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+header ul
+{
+    position: relative;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+header ul li a 
+{
+    color:#eee;
+    font-size: 1em;
+    padding: 15px 22px;
+    text-decoration: none; 
+    display: flex;
+    justify-content:space-between !important;
+}
+ li a:hover
+{
+    color:rgb(211, 23, 23);
+    cursor: pointer;
+
+}
+ ul li ul{
+    position: absolute;
+    top: 9vh;
+    opacity: 0;
+    left: 5;
+    z-index: 2;
+    list-style: none;
+    background-color: rgba(40, 150, 150, 0.582);
+}
+ ul li:hover ul{
+    display: block;
+    opacity:1;
+    z-index: 2;
+    min-width: 130px;
+    text-align: left;
+    box-shadow: 0px 4px 5px -1px;
+}
+ ul li ul li 
+{
+    clear: both; 
+    width: 100%;
+    text-align: left;
+}
+ ul li ul li:hover{
+    padding-left: 15px;
+    border-left: 2px solid red;
+}
+
+
+
+body h1{
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    margin-left: 900px;
+}
+
+
+body p{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    margin-left: 900px; 
+}
+ div #btn-text{
+    position: relative;
+    top:50px;
+    left: 1110px;
+    width: 180px;
+    height: 35px;
+    background: #2980b9;
+    border-radius: 5px;
+    z-index: 9;
+    cursor: pointer;
+    transition: all ease-in 0.5s;      
+ }
+ div #btn-text:hover{
+    transform: translateY(-10px);
+ }
+ div #btn-text a:hover{
+    color: #fff;
+ }
+ 
+ div #btn-text a{
+    color: #020405;
+    text-decoration: none;
+ }
+
+
+/*body #btn-text:focus{
+    outline-color: transparent;
+    background-color:rgb(69, 69, 186);
+    scale: 0.95;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px blue;
+    
+}*/
+
+
+@media(max-width: 900px){
+    ul,  header .action_btn {
+        display: none !important;
+    }
+
+    header  .toggle_btn{
+        display: block !important;
+    }
+
+}
+
+/*------------- login form -----------*/
+
+ /*.log{
+    padding: 35px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+ }*/
+ body#container1{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg,#2980b9,#8e44ad, #020405);
+    height: 110vh;
+    overflow: hidden;
+ } 
+.log1{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #fff; 
+    border-radius: 10px; 
+    box-shadow: 2px 5px 2px  black;
+}    
+.log1 h2{
+    text-align: center;
+    padding: 20px 0 30px 0;
+    border-bottom: 1px solid #8e44ad;
+}
+.log1 form{
+    padding: 40px;
+    box-sizing: border-box;
+}
+form .text_name{
+    position: relative;
+    border-bottom: 2px solid #2980b9;
+    margin: 30px 0;
+
+}
+.text_name input{
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+    color: #020405;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    transition: all ease 0.3s;
+    background: none;
+}
+
+.text_name ion-icon{
+    position:absolute;
+    right: 8px;
+    color:#8e44ad;
+    transition:all ease 0s;
+    cursor: pointer;
+    
+}
+
+ label{
+    position: absolute;
+    color:rgb(23, 57, 159);
+    font-weight: bold;
+    font-size: 1em;
+    float: left;
+    top:-10px;
+    left: 5px;
+    transition: all ease  0.5s;
+    pointer-events: none;
+    
+}
+   
+
+
+    
+
+
+button[type=submit]{
+    width: 30%;
+    position: absolute;
+    color: #eee;
+    height: 5vh;
+    border: 40px;
+    top:280px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px silver;
+    cursor: pointer;
+    overflow: hidden;
+    background: linear-gradient(60deg,#8e44ad,#2980b9) !important;  
+}
+button[type=submit]:hover{
+    background:linear-gradient(80deg, rgba(204, 255, 0, 0.444),#8e44ad 55%) !important;
+  
+}
+.button [type=submit]:focus{
+    outline-color: transparent !important;
+    background-color:rgb(148, 48, 72) !important;
+    scale: 0.95 !important;
+    outline-style: solid !important;
+    box-shadow: 0 0 0 2px  rgba(204, 255, 0, 0.444) !important;
+ }
+
+form a{
+    position: relative;
+    padding-left: 200px;
+    display: grid;
+    height: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 14px;
+
+
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------sign up form design -------------*/
+ body#form1{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    background: linear-gradient(120deg,#2980b9, #020405);
+    min-height: 100vh;
+    width: 100%;
+ }
+.container5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.formd{
+    position: relative;
+    width: 450px;
+    height: 600px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    background: rgba(97, 50, 144, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 2px  black;
+}
+form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600px;
+    padding: 20px 0 30px 0;
+    border-bottom: 1px solid #8e44ad;
+}
+form .F{
+    position: relative;
+    margin: 25px 0;
+    width: 310px;
+}
+ #head{
+    height: 5px;
+    color: #fff;
+    font-size: 14px;
+    
+}
+form input{
+    width: 100%;
+    padding: 10px;
+    height: 27px;
+    margin-top: 8px;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+}
+form input{
+    border: 1px solid silver;
+    color: #fff;
+    height: 35px;
+    cursor: pointer;
+}
+input::placeholder{
+    color: rgb(97, 215, 215) !important;
+}
+
+.button{
+    position: relative;
+    width:70%;
+    color: #eee;
+    margin:45%;
+    right: -50px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 3px silver;
+    cursor: pointer;
+    overflow: hidden;
+    background: linear-gradient(-80deg, #8e44ad 25%,#25c9a3 ) 
+
+}
+.button:hover{
+    background: linear-gradient(80deg, rgba(204, 255, 0, 0.444),#8e44ad 55%);
+
+}
+
+.button:focus{
+    outline-color: transparent;
+    background-color:rgb(35, 119, 171);
+    scale: 0.95;
+    outline-style: solid;
+    box-shadow: 0 0 0 2px  rgba(204, 255, 0, 0.444);
+ }
+.F1  span a{
+    color:#fff;
+    padding: 45px;
+    justify-content: space-around;
+    top:15px;
+    right: -15%;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.F ion-icon {
+    position:absolute;
+    right: 10px;
+    top: 15px;
+    color: black;
+    
+}
+ .error{
+    color: rgb(242,18,18) !important;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.F.success input{
+    position: absolute;
+    border-color: #0cc477 !important;
+    visibility: visible !important;
+}
+
+.F.error input{
+    background-color: red !important;
+    visibility: visible !important;
+}
+
+
+
+/*--------------footer style--------------------------------*/
+.fooder{
+    position: relative;
+    top: 600px;
+    bottom: 100px;
+    margin: 60px;
+    width: 100%;
+    background: #020405;
+}
+.customer{
+    position:absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+ .customer label{
+    top: -25px;
+    color: #eee;
+    font-size: 15px;
+}
+.customer input{
+    width: 230px;
+    height: 25px;
+    background: #fff;
+    color: black;
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    transition: all ease 0.3s;
+
+}
+
+.customer button{
+    margin-left: 8px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    background:lightskyblue;
+}
+
+.icon ion-icon{
+    position:relative;
+    color: #fff;
+    margin-top: 6px;
+    float: left;
+    left: 600px;
+    top: -100px;
+    margin-right: 13px;  
+}
+footer p{
+    position:relative;
+    text-align: center;
+    left:-940px;
+    background:gray;
+    width: 110%;
+    height: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
